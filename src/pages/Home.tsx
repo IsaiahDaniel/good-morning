@@ -36,7 +36,7 @@ const Home = (props: Props) => {
         </div>
       </section>
 
-      <section className="mt-36">
+      <section className="my-36">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
           $GM #GMToken
         </h2>
@@ -44,7 +44,7 @@ const Home = (props: Props) => {
           <div className="flex-1">
             <img
               src={Logo}
-              className="rounded-full w-72 md:w-[600px] shadow-inner"
+              className="rounded-full w-72 md:w-[400px] shadow-inner"
               alt=""
             />
           </div>

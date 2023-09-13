@@ -1,5 +1,5 @@
 import Logo from "../../../assets/logo.jpeg";
-import { BsFacebook, BsTelegram } from "react-icons/bs";
+import { BsTelegram, BsTwitter } from "react-icons/bs";
 
 type Props = {};
 
@@ -27,7 +27,7 @@ const Footer = (props: Props) => {
         <div>
             <h2>Contact Us</h2>
             <div className="flex flex-col md:flex-row space-x-4 mt-5">
-              <BsFacebook size={33} />
+              <BsTwitter size={33} />
               <BsTelegram size={33} />
             </div>
         </div>
