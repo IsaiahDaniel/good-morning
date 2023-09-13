@@ -1,4 +1,5 @@
-import Logo from "../../../assets/pepe-logo.jpeg";
+import Logo from "../../../assets/logo.jpeg";
+import { BsFacebook, BsTelegram } from "react-icons/bs";
 
 type Props = {};
 
@@ -7,7 +8,7 @@ const Footer = (props: Props) => {
     <footer className="border rounded-lg p-5 my-10 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div>
-          <img src={Logo} alt="" className="rounded-full"  />
+          <img src={Logo} alt="" className="rounded-full w-20 h-20 mb-5"  />
           <p className="font-extrabold">
             Frens, it's time for a real Pepe which is by the community, for the
             community. Load up the meme cannons and fire at your own will.
@@ -25,8 +26,9 @@ const Footer = (props: Props) => {
 
         <div>
             <h2>Contact Us</h2>
-            <div>
-
+            <div className="flex flex-col md:flex-row space-x-4 mt-5">
+              <BsFacebook size={33} />
+              <BsTelegram size={33} />
             </div>
         </div>
       </div>
