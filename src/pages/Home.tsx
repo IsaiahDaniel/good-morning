@@ -30,7 +30,7 @@ const Home = (props: Props) => {
         <div className="flex-1 flex items-end justify-end">
           <img
             src={Nature}
-            className="rounded-full w-72 h-72 md:w-[600px] md:h-[600px] shadow-inner"
+            className="rounded-full w-72 h-72 md:w-[400px] md:h-[400px] shadow-inner"
             alt=""
           />
         </div>
