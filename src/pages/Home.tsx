@@ -38,7 +38,7 @@ const Home = (props: Props) => {
 
       <section className="mt-36">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
-          About Us
+          $GM #GMToken
         </h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex-1">
