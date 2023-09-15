@@ -1,7 +1,8 @@
 import ShowcaseImg from "../assets/pepe-showcase.jpeg";
 import Footer from "../components/shared/Footer/Footer";
 import Logo from "../assets/logo.jpeg";
-import Nature from "../assets/nature.jpeg"
+import Nature from "../assets/nature.jpeg";
+import { Typewriter } from "react-simple-typewriter";
 
 type Props = {};
 
@@ -38,7 +39,19 @@ const Home = (props: Props) => {
 
       <section className="my-36">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
-          $GM #GMToken
+          <Typewriter
+            words={[
+              "$GM",
+              "#GMToken",
+            ]}
+            loop={100}
+            cursor
+            cursorStyle="|"
+            typeSpeed={10}
+            deleteSpeed={20}
+            delaySpeed={3000}
+          />
+           
         </h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex-1">

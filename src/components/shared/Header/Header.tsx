@@ -1,4 +1,3 @@
-// import Logo from "../../../assets/logo.png";
 import Logo from "../../../assets/logo.jpeg";
 
 const Header = () => {
@@ -17,7 +16,10 @@ const Header = () => {
           <li>Buy</li>
         </ul>
 
-        <a href="t.me/GMToken" target="_blank" className="bg-white shadow-2xl px-10 py-3 md:py-5 rounded-full">
+        <a href="t.me/GMToken" 
+          target="_blank" 
+          rel="noreferrer" 
+          className="bg-white shadow-2xl px-10 py-3 md:py-5 rounded-full">
           Community
         </a>
       </div>
