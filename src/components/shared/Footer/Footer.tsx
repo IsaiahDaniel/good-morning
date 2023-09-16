@@ -28,8 +28,12 @@ const Footer = (props: Props) => {
         <div>
           <h2>Contact Us</h2>
           <div className="flex flex-col md:flex-row space-x-4 mt-5">
-            <BsTwitter size={33} />
-            <BsTelegram size={33} />
+            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank">
+              <BsTwitter size={33} />
+            </a>
+            <a href="https://t.me/GmTokenBsc" target="_blank">
+              <BsTelegram size={33} />
+            </a>
           </div>
         </div>
       </div>
