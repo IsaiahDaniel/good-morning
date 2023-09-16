@@ -35,10 +35,10 @@ const Home = (props: Props) => {
             make every day a Goodmorning!
           </p>
           <div className="flex-col flex md:flex-row items-center mt-5 space-x-4">
-            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5 text-center md:mt-0 md:mr-3 md:mb-3">
+            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3">
               Connect twitter and retweet the pin post
             </a>
-            <button className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5">
+            <button className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-3 md:mt-0">
               View in DexTools
             </button>
           </div>
