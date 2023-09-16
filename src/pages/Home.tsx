@@ -74,7 +74,7 @@ const Home = (props: Props) => {
             />
           </div>
           <div className="flex-1 text-white">
-            <h2 className="text-3xl font-extrabold mb-5 mt-8">About</h2>
+            <h2 className="text-3xl font-extrabold mb-5 mt-10">About</h2>
             <p>
               We're more than just a meme token; we're a vibrant digital sunrise
               that brings together meme enthusiasts, crypto aficionados, and
