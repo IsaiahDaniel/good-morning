@@ -80,7 +80,7 @@ const Home = (props: Props) => {
             />
           </div>
           <div className="flex-1 text-white">
-            <h2 className="text-6xl font-extrabold mb-5">About</h2>
+            <h2 className="text-3xl font-extrabold mb-5 mt-8">About</h2>
             <p>
               Welcome to Goodmorning, where the sun never sets on the world of
               crypto fun and community engagement! We're more than just a meme

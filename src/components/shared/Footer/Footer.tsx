@@ -5,7 +5,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="border rounded-lg p-5 my-10 mx-5 md:mx-10 text-white">
+    <footer className="border rounded-lg p-5 my-7 mx-5 md:mx-10 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div>
           <img src={Logo} alt="" className="rounded-full w-20 h-20 mb-5" />
