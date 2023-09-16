@@ -27,20 +27,20 @@ const Home = (props: Props) => {
         animate={controls} 
       >
         <div className="flex-1 mx-10 animate-slideLeft">
-          <h3>Welcome to</h3>
-          <h2 className="text-4xl md:text-7xl mb-2">Good morning ☀️</h2>
+          <h3>Welcome</h3>
+          <h2 className="text-4xl md:text-7xl mb-2">Good morning! ☀️</h2>
           <p>
             Whether you're an experienced crypto trader or a newbie just dipping
             your toes into the meme token waters, you're welcome here. Let's
             make every day a Goodmorning!
           </p>
           <div className="flex-col flex md:flex-row items-center mt-5 space-x-4">
-            <button className="bg-white text-black shadow-2xl px-16 md:px-24 py-3 md:py-5 rounded-full">
+            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5 text-center md:mt-0 md:mr-3 md:mb-3">
+              Connect twitter and retweet the pin post
+            </a>
+            <button className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5">
               View in DexTools
             </button>
-            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5 text-center md:mt-0">
-              Connect to twitter and retweet the pin post
-            </a>
           </div>
         </div>
 
