@@ -3,28 +3,24 @@ import Footer from "../components/shared/Footer/Footer";
 import Logo from "../assets/logo.jpeg";
 import Nature from "../assets/nature.jpeg";
 import { Typewriter } from "react-simple-typewriter";
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-
 
 type Props = {};
 
 const Home = (props: Props) => {
-
   const controls = useAnimation();
 
   useEffect(() => {
     controls.start({ opacity: 1 }); // Start the fade-in animation
   }, [controls]);
-  
-
 
   return (
     <main className="container mx-auto my-10">
-      <motion.section 
+      <motion.section
         className="text-white flex flex-col md:flex-row items-center justify-center gap-10 md:px-0"
         initial={{ opacity: 0 }}
-        animate={controls} 
+        animate={controls}
       >
         <div className="flex-1 mx-5 md:mx-10 animate-slideLeft">
           <h3>Welcome</h3>
@@ -35,7 +31,11 @@ const Home = (props: Props) => {
             make every day a Goodmorning!
           </p>
           <div className="flex-col flex md:flex-row items-center mt-5 space-x-4">
-            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3">
+            <a
+              href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
+              target="_blank"
+              className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3"
+            >
               Connect twitter and retweet the pin post
             </a>
             <button className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
@@ -53,15 +53,10 @@ const Home = (props: Props) => {
         </div>
       </motion.section>
 
-      
-
       <section className="my-36 mx-5 md:mx-10" id="about">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
           <Typewriter
-            words={[
-              "$GM",
-              "#GMToken",
-            ]}
+            words={["$GM", "#GMToken"]}
             loop={100}
             cursor
             cursorStyle="|"
@@ -69,7 +64,6 @@ const Home = (props: Props) => {
             deleteSpeed={20}
             delaySpeed={3000}
           />
-           
         </h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex-1">
@@ -82,11 +76,11 @@ const Home = (props: Props) => {
           <div className="flex-1 text-white">
             <h2 className="text-3xl font-extrabold mb-5 mt-8">About</h2>
             <p>
-              Welcome to Goodmorning, where the sun never sets on the world of
-              crypto fun and community engagement! We're more than just a meme
-              token; we're a vibrant digital sunrise that brings together meme
-              enthusiasts, crypto aficionados, and dreamers from all corners of
-              the internet.
+              We're more than just a meme token; we're a vibrant digital sunrise
+              that brings together meme enthusiasts, crypto aficionados, and
+              dreamers from all corners of the internet. Welcome to Goodmorning,
+              where the sun never sets on the world of crypto fun and community
+              engagement!
             </p>
 
             {/* <h2 className="text-6xl">About</h2>
