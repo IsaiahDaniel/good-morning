@@ -11,7 +11,11 @@ const Header = () => {
         <ul className="flex items-center text-white space-x-10">
           <li>Home</li>
 
-          <li>About</li>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
 
           <li>Buy</li>
         </ul>
