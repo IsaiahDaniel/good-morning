@@ -38,9 +38,9 @@ const Home = (props: Props) => {
             <button className="bg-white text-black shadow-2xl px-16 md:px-24 py-3 md:py-5 rounded-full">
               View in DexTools
             </button>
-            <button className="bg-white text-black shadow-2xl px-16 md:px-24 py-3 md:py-5 rounded-full mt-5 md:mt-0">
-              Twitter
-            </button>
+            <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank" className="bg-white text-black shadow-2xl px-16 md:px-16 py-3 md:py-5 rounded-full mt-5 text-center md:mt-0">
+              Connect to twitter and retweet the pin post
+            </a>
           </div>
         </div>
 

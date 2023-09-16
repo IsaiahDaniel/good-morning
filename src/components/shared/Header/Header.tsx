@@ -16,7 +16,7 @@ const Header = () => {
           <li>Buy</li>
         </ul>
 
-        <a href="t.me/GMToken" 
+        <a href="http://t.me/GmTokenBsc" 
           target="_blank" 
           rel="noreferrer" 
           className="bg-white shadow-2xl px-10 py-3 md:py-5 rounded-full">
