@@ -20,13 +20,13 @@ const Home = (props: Props) => {
 
 
   return (
-    <main className="container mx-auto px-5 my-10">
+    <main className="container mx-auto my-10">
       <motion.section 
         className="text-white flex flex-col md:flex-row items-center justify-center gap-10 md:px-0"
         initial={{ opacity: 0 }}
         animate={controls} 
       >
-        <div className="flex-1 mx-10 animate-slideLeft">
+        <div className="flex-1 mx-5 md:mx-10 animate-slideLeft">
           <h3>Welcome</h3>
           <h2 className="text-4xl md:text-7xl mb-2">Good morning! ☀️</h2>
           <p>
@@ -55,7 +55,7 @@ const Home = (props: Props) => {
 
       
 
-      <section className="my-36" id="about">
+      <section className="my-36 mx-5 md:mx-10" id="about">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
           <Typewriter
             words={[
