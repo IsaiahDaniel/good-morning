@@ -3,14 +3,30 @@ import Footer from "../components/shared/Footer/Footer";
 import Logo from "../assets/logo.jpeg";
 import Nature from "../assets/nature.jpeg";
 import { Typewriter } from "react-simple-typewriter";
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from "react";
+
 
 type Props = {};
 
 const Home = (props: Props) => {
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ opacity: 1 }); // Start the fade-in animation
+  }, [controls]);
+  
+
+
   return (
     <main className="container mx-auto px-5 my-10">
-      <section className="text-white flex flex-col md:flex-row items-center justify-center gap-10 md:px-0">
-        <div className="flex-1 mx-10">
+      <motion.section 
+        className="text-white flex flex-col md:flex-row items-center justify-center gap-10 md:px-0"
+        initial={{ opacity: 0 }}
+        animate={controls} 
+      >
+        <div className="flex-1 mx-10 animate-slideLeft">
           <h3>Welcome to</h3>
           <h2 className="text-4xl md:text-7xl mb-2">Good morning ☀️</h2>
           <p>
@@ -28,14 +44,16 @@ const Home = (props: Props) => {
           </div>
         </div>
 
-        <div className="flex-1 flex items-end justify-end">
+        <div className="flex-1 flex items-end justify-end animate-slideup">
           <img
             src={Nature}
             className="rounded-full w-72 h-72 md:w-[400px] md:h-[400px] shadow-inner"
             alt=""
           />
         </div>
-      </section>
+      </motion.section>
+
+      
 
       <section className="my-36">
         <h2 className="text-6xl font-extrabold text-white text-center mb-40">
