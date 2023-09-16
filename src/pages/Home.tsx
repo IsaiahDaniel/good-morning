@@ -30,13 +30,20 @@ const Home = (props: Props) => {
             your toes into the meme token waters, you're welcome here. Let's
             make every day a Goodmorning!
           </p>
-          <div className="flex-col flex md:flex-row items-center mt-5 space-x-4">
+
+
+          
+
+          <p className="py-4 text-xl mt-5">Click Below to connect twitter and perform the pin task</p>
+
+          <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
+
             <a
               href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
               target="_blank"
-              className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3"
+              className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3 cursor-pointer hover:border hover:bg-black hover:text-white"
             >
-              Connect twitter and retweet the pin post
+              Connect
             </a>
             <button className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
               View in DexTools
