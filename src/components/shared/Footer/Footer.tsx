@@ -1,4 +1,4 @@
-import Logo from "../../../assets/logo.jpeg";
+import Logo from "../../../assets/logo4.jpeg";
 import { BsTelegram, BsTwitter } from "react-icons/bs";
 
 type Props = {};
