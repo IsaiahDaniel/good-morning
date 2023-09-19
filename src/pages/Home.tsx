@@ -1,6 +1,6 @@
 import ShowcaseImg from "../assets/pepe-showcase.jpeg";
 import Footer from "../components/shared/Footer/Footer";
-import Logo from "../assets/logo.jpeg";
+import Logo from "../assets/logo3.jpeg";
 import Nature from "../assets/nature.jpeg";
 import { Typewriter } from "react-simple-typewriter";
 import { motion, useAnimation } from "framer-motion";
