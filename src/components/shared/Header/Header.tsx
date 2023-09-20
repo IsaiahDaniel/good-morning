@@ -1,6 +1,6 @@
 // import Logo from "../../../assets/logo.jpeg";
 // import Logo from "../../../assets/logo2.jpeg";
-import Logo from "../../../assets/logo3.jpeg";
+import Logo from "../../../assets/logo2.jpeg";
 // import Logo from "../../../assets/logo4.jpeg";
 
 const Header = () => {
