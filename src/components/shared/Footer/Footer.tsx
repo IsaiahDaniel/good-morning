@@ -1,5 +1,6 @@
 import Logo from "../../../assets/logo4.jpeg";
 import { BsTelegram, BsTwitter } from "react-icons/bs";
+import { AiOutlineMedium } from "react-icons/ai";
 
 type Props = {};
 
@@ -27,13 +28,17 @@ const Footer = (props: Props) => {
 
         <div className="mt-5">
           <h2 className="text-2xl font-extrabold">Contact Us</h2>
-          <div className="space-y-2 mt-3">
+          <div className="space-y-2 mt-3 flex flex-col md:flex-row items-center space-x-4">
             <a href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09" target="_blank">
               <BsTwitter size={33} />
             </a>
             <br />
-            <a href="https://t.me/GmTokenBsc" target="_blank">
+            <a href="https://t.me/GmTokenBscAnnouncement" target="_blank">
               <BsTelegram size={33} />
+            </a>
+            <br />
+            <a href="https://medium.com/@contactgmcoin/gmtokenbscs-using-the-2-charity-tax-to-make-a-global-impact-d1319511c3d5" target="_blank">
+              <AiOutlineMedium size={33} />
             </a>
           </div>
         </div>

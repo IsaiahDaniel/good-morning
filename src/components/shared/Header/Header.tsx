@@ -3,6 +3,8 @@
 import Logo from "../../../assets/logo2.jpeg";
 // import Logo from "../../../assets/logo4.jpeg";
 
+import { FaXTwitter } from 'react-icons/fa6'
+
 const Header = () => {
   return (
     <header className="container mx-auto py-10">
@@ -15,19 +17,30 @@ const Header = () => {
           <li className="text-sm md:text-xl">Home</li>
 
           <li className="text-sm md:text-xl">
-            <a href="#about">
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
 
-          <li className="text-sm md:text-xl">Buy</li>
+          <li className="text-sm md:text-xl">
+            <a
+
+              href="http://t.me/GmTokenBsc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buy
+            </a>
+          </li>
         </ul>
 
-        <a href="http://t.me/GmTokenBsc" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="bg-white shadow-2xl px-5 md:px-10 py-3 md:py-5 rounded-full">
-          Community
+        <a
+          href="http://t.me/GmTokenBsc"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-white shadow-2xl px-5 md:px-6 py-3 md:py-6 rounded-full flex items-center"
+        >
+          <FaXTwitter size={26} className="mr-3" />
+          {/* connnect twitter */}
+          community
         </a>
       </div>
     </header>

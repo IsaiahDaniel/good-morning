@@ -36,7 +36,6 @@ const Home = (props: Props) => {
           </p>
 
           <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
-
             <a
               // href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
               href="https://twitter.com/GmTokenBsc/status/1704803602789806549?t=DljN-DXxa3ts3gy9zYW_OQ&s=19"
@@ -116,13 +115,46 @@ const Home = (props: Props) => {
         </div>
       </section>
 
-      {/* <section>
-        <div className="text-center text-white">
+      <section>
+        <div className="text-center text-white mx-5">
           <h2 className="text-6xl text-center mb-5">Tokenomics</h2>
-          <p>$PEPE COIN Supply and Token information</p>
-           <p>Contract Address: 0xbe042e9d09cb588331ff911c2b46fd833a3e5bd6</p>
+          <p>$GM Token information</p>
+          <p>0 BNB Address: 0xfca6a0EA6725158d8e07A512692081bfa971aAf2</p>
         </div>
-      </section> */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:w-[90%] md:mx-auto my-10 text-white">
+          <div className="border-2 p-3">
+            <ul className="divide-y py-5">
+              <li>
+                <h2 className="text-2xl text-center pb-4">Token Information</h2>
+              </li>
+              <li className="py-4">10% Airdrop</li>
+              <li className="py-4">5% Marketing</li>
+              <li className="py-4">5% Team (To be lock for 3years)</li>
+              <li className="py-4">80% Liquidity (locked for 3years)</li>
+            </ul>
+          </div>
+
+          <div className="border-2 p-3">
+            <h2>Charity Information</h2>
+
+            <ul className="py-5">
+              <li className="py-4">
+                2% Tax for revenue to cover charity mission
+              </li>
+              <li className="mt-5">
+                <span className="mt-4 mr-5">To learn more</span>
+                <a
+                  href="https://medium.com/@contactgmcoin/gmtokenbscs-using-the-2-charity-tax-to-make-a-global-impact-d1319511c3d5"
+                  className="bg-white text-black shadow-2xl px-16 md:px-12 p-3 rounded-full mt-10"
+                >
+                  Read
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>
