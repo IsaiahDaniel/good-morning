@@ -34,7 +34,7 @@ const Home = (props: Props) => {
 
           
 
-          <p className="py-4 text-xl mt-5">Click Below to connect twitter and perform the pin task</p>
+          <p className="py-4 text-xl mt-5">To validate your BNB,iteract on twitter and perform the task</p>
 
           <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
 
