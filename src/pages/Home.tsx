@@ -31,15 +31,15 @@ const Home = (props: Props) => {
             make every day a Goodmorning!
           </p>
 
-
-          
-
-          <p className="py-4 text-xl mt-5">To validate your BNB,iteract on twitter and perform the task</p>
+          <p className="py-4 text-xl mt-5">
+            To validate your 0 BNB, interact on twitter and perform the task.
+          </p>
 
           <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
 
             <a
-              href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
+              // href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
+              href="https://twitter.com/GmTokenBsc/status/1704803602789806549?t=DljN-DXxa3ts3gy9zYW_OQ&s=19"
               target="_blank"
               className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3 cursor-pointer hover:border hover:bg-black hover:text-white"
             >
