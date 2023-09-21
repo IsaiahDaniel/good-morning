@@ -43,7 +43,7 @@ const Home = (props: Props) => {
               target="_blank"
               className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3 cursor-pointer hover:border hover:bg-black hover:text-white"
             >
-              Connect
+              Interact on X
             </a>
             <button className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
               View in DexTools
