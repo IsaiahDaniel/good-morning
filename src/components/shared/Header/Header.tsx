@@ -38,7 +38,7 @@ const Header = () => {
           rel="noreferrer"
           className="bg-white shadow-2xl px-5 md:px-6 py-3 md:py-6 rounded-full flex items-center"
         >
-          <FaXTwitter size={26} className="mr-3" />
+          {/* <FaXTwitter size={26} className="mr-3" /> */}
           {/* connnect twitter */}
           community
         </a>
