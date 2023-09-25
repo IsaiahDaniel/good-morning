@@ -1,6 +1,7 @@
 import Logo from "../../../assets/logo4.jpeg";
 import { BsTelegram, BsTwitter } from "react-icons/bs";
 import { AiOutlineMedium } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -20,9 +21,24 @@ const Footer = (props: Props) => {
         <div>
           <h2 className="text-2xl font-extrabold mt-5 mb-3">Quick Links</h2>
           <ul className="px-5 space-y-3">
-            <li className="md:text-xl font-bold">Home</li>
-            <li className="md:text-xl font-bold">About</li>
-            <li className="md:text-xl font-bold">Dextools</li>
+            <li className="md:text-xl font-bold">
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li className="md:text-xl font-bold">
+              <a href="#about"> 
+                About 
+              </a>
+            </li>
+            <li className="md:text-xl font-bold">
+              <a 
+                href="https://www.dextools.io/app/en/bnb/pair-explorer/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a" 
+                target="_blank"
+              >
+                Dextools
+              </a>
+            </li>
           </ul>
         </div>
 

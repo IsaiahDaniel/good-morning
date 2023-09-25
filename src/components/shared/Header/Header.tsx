@@ -26,7 +26,7 @@ const Header = () => {
           <li className="text-sm md:text-xl">
             <a
 
-              href="http://t.me/GmTokenBsc"
+              href="https://pancakeswap.finance/swap?outputCurrency=0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33"
               target="_blank"
               rel="noreferrer"
             >
