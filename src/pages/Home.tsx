@@ -5,15 +5,30 @@ import Nature from "../assets/nature.jpeg";
 import { Typewriter } from "react-simple-typewriter";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { useSignInWithTwitter } from "react-firebase-hooks/auth";
+import { auth } from "../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 type Props = {};
 
 const Home = (props: Props) => {
   const controls = useAnimation();
 
+  const [signInWithTwitter, user, loading, error] = useSignInWithTwitter(auth);
+  const navigate = useNavigate();
+
+  console.log("user", user);
+  console.log("error", error);
+
   useEffect(() => {
-    controls.start({ opacity: 1 }); // Start the fade-in animation
+    controls.start({ opacity: 1 }); 
   }, [controls]);
+
+  useEffect(() => {
+    if(user){
+      navigate("/dashboard");
+    }
+  }, [user]);
 
   return (
     <main className="container mx-auto my-10">
@@ -31,11 +46,28 @@ const Home = (props: Props) => {
             make every day a Goodmorning!
           </p>
 
-          <p className="py-4 text-xl mt-5">
+          {/* <p className="py-4 text-xl mt-5">
             To validate your 0 BNB, interact on twitter and perform the task.
-          </p>
+          </p> */}
 
-          <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
+          <div className="flex-col flex md:flex-row items-center mt-5 space-x-4">
+            <a
+              // href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
+              href="https://twitter.com/GmTokenBsc/status/1704803602789806549?t=DljN-DXxa3ts3gy9zYW_OQ&s=19"
+              target="_blank"
+              className="bg-white text-black shadow-2xl px-10 md:px-12 py-3 md:py-5 rounded-full text-center md:mt-0 md:mr-3 md:mb-3 cursor-pointer hover:border hover:bg-black hover:text-white"
+            >
+              Buy On Pancake
+            </a>
+            <a 
+              href="https://www.dextools.io/app/en/bnb/pair-explorer/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a" 
+              target="_blank"
+              className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
+              View in DexTools
+            </a>
+          </div>
+
+          {/* <div className="flex-col flex md:flex-row items-center mt-2 space-x-4">
             <a
               // href="https://twitter.com/GmTokenBsc?t=2mF1t7yK2Yq2YGjPoy8m3g&s=09"
               href="https://twitter.com/GmTokenBsc/status/1704803602789806549?t=DljN-DXxa3ts3gy9zYW_OQ&s=19"
@@ -44,10 +76,23 @@ const Home = (props: Props) => {
             >
               Interact on X
             </a>
-            <button className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
-              View in DexTools
-            </button>
-          </div>
+            {user ? (
+              <button
+                type="button"
+                className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0"
+              >
+                Login
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => signInWithTwitter()}
+                className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0"
+              >
+                Connect Twitter
+              </button>
+            )}
+          </div> */}
         </div>
 
         <div className="flex-1 flex items-end justify-end animate-slideup">
