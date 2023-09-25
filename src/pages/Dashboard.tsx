@@ -42,7 +42,7 @@ const Dashboard = (props: Props) => {
       <div className={`shadow-lg rounded-lg p-4 bg-white divide-y`}>
         <div className="flex justify-between items-center py-4">
           <h2>{user?.displayName}</h2>
-          <img src={user ? user?.photoURL : null} />
+          {/* <img src={user ? user?.photoURL : null} /> */}
         </div>
 
         {/* <div>
