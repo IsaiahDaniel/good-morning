@@ -60,7 +60,7 @@ const Home = (props: Props) => {
               Buy On Pancake
             </a>
             <a
-              href="https://www.dextools.io/app/en/bnb/pair-explorer/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a"
+              href="https://dexscreener.com/bsc/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a"
               target="_blank"
               className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0"
             >
@@ -177,7 +177,7 @@ const Home = (props: Props) => {
               <li>
                 <h2 className="text-2xl text-center pb-4">Token Information</h2>
               </li>
-              <li className="py-4">10% Airdrop</li>
+              <li className="py-4">5% Airdrop</li>
               <li className="py-4">5% Marketing</li>
               <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between">
                 <span>5% Team (Locked for 3years)</span>
@@ -223,7 +223,7 @@ const Home = (props: Props) => {
                 </a>
               </li>
               <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between border-t mt-10">
-                <span>Token Burn</span>
+                <span>6.9457% Token Burnt</span>
                 <span className="mt-10 md:mt-0">
                   <a
                     href="https://bscscan.com/token/0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33?a=0x0000000000000000000000000000000000000001"
