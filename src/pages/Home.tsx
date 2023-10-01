@@ -213,7 +213,7 @@ const Home = (props: Props) => {
               <li className="py-4">
                 2% Tax for revenue to cover charity mission
               </li>
-              <li className="mt-5">
+              <li className="flex flex-col md:items-cente md:justify-between">
                 <span className="mt-4 mr-5">To learn more</span>
                 <a
                   href="https://medium.com/@contactgmcoin/gmtokenbscs-using-the-2-charity-tax-to-make-a-global-impact-d1319511c3d5"
