@@ -223,7 +223,7 @@ const Home = (props: Props) => {
                 </a>
               </li>
               <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between border-t mt-10">
-                <span>Token Bond</span>
+                <span>Token Burn</span>
                 <span className="mt-10 md:mt-0">
                   <a
                     href="https://bscscan.com/token/0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33?a=0x0000000000000000000000000000000000000001"
