@@ -21,11 +21,11 @@ const Home = (props: Props) => {
   console.log("error", error);
 
   useEffect(() => {
-    controls.start({ opacity: 1 }); 
+    controls.start({ opacity: 1 });
   }, [controls]);
 
   useEffect(() => {
-    if(user){
+    if (user) {
       navigate("/dashboard");
     }
   }, [user]);
@@ -59,10 +59,11 @@ const Home = (props: Props) => {
             >
               Buy On Pancake
             </a>
-            <a 
-              href="https://www.dextools.io/app/en/bnb/pair-explorer/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a" 
+            <a
+              href="https://www.dextools.io/app/en/bnb/pair-explorer/0xb298d4bf7ebcbae26cc994e6b41bcf7dea0b3b2a"
               target="_blank"
-              className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0">
+              className="bg-white text-black shadow-2xl px-16 md:px-12 py-3 md:py-5 rounded-full mt-3 md:mt-0"
+            >
               View in DexTools
             </a>
           </div>
@@ -163,7 +164,10 @@ const Home = (props: Props) => {
       <section>
         <div className="text-center text-white mx-5">
           <h2 className="text-6xl text-center mb-5">Tokenomics</h2>
-          <p>$GM Token Contract Address <span className="italic">(Ownership Renounced)</span></p>
+          <p>
+            $GM Token Contract Address{" "}
+            <span className="italic">(Ownership Renounced)</span>
+          </p>
           <p>Contract Address: 0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33</p>
         </div>
 
@@ -175,8 +179,30 @@ const Home = (props: Props) => {
               </li>
               <li className="py-4">10% Airdrop</li>
               <li className="py-4">5% Marketing</li>
-              <li className="py-4">5% Team (To be lock for 3years)</li>
-              <li className="py-4">80% Liquidity (locked for 3years)</li>
+              <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+                <span>5% Team (Locked for 3years)</span>
+                <span className="mt-10 md:mt-0">
+                  <a
+                    href="https://bscscan.com/token/0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33?a=0xeaed594b5926a7d5fbbc61985390baaf936a6b8d"
+                    target="_blank"
+                    className="bg-white text-black shadow-2xl px-16 md:px-12 p-3 rounded-full mt-10"
+                  >
+                    Verify
+                  </a>
+                </span>
+              </li>
+              <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+                <span>80% Liquidity (Locked for 3years)</span>
+                <span className="mt-10 md:mt-0">
+                  <a
+                    href="https://app.uncx.network/amm/pancake-v2/token/0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33"
+                    target="_blank"
+                    className="bg-white text-black shadow-2xl px-16 md:px-12 p-3 rounded-full mt-10"
+                  >
+                    Verify
+                  </a>
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -195,6 +221,18 @@ const Home = (props: Props) => {
                 >
                   Read
                 </a>
+              </li>
+              <li className="py-6 flex flex-col md:flex-row md:items-center md:justify-between border-t mt-10">
+                <span>Token Bond</span>
+                <span className="mt-10 md:mt-0">
+                  <a
+                    href="https://bscscan.com/token/0xb80965bE1be2F3f9cc4573A7A7aFFfF1b739eD33?a=0x0000000000000000000000000000000000000001"
+                    target="_blank"
+                    className="bg-white text-black shadow-2xl px-16 md:px-12 p-3 rounded-full mt-10"
+                  >
+                    Verify
+                  </a>
+                </span>
               </li>
             </ul>
           </div>

@@ -49,7 +49,7 @@ const Footer = (props: Props) => {
               <BsTwitter size={33} />
             </a>
             <br />
-            <a href="https://t.me/GmTokenBscAnnouncement" target="_blank">
+            <a href="https://t.me/GmTokenBscAnn" target="_blank">
               <BsTelegram size={33} />
             </a>
             <br />
